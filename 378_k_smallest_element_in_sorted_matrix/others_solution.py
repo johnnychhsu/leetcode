@@ -19,6 +19,9 @@ class Solution:
                 col = cur_min[2]
                 heappush(container, (matrix[row + 1][col], row + 1, col))
         return heappop(container)[0]
-                
+
+sol = Solution()
+a = sol.kthSmallest([[1,2],[1,3]], 3)
+print (a)
         
         
