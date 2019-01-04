@@ -14,5 +14,13 @@ Thus we can use union find to tell whether there are cycle in a undirected graph
 Every vertex should be in different subset with only one element. Then we loop through all edges. Each time we receive an edge, the two nodes should be in different edge if there is no cycle. <br />
 After checking, we put them into the same subset by making one of the node as the parent of another node. We keep tracking the nodes' parent. If we encounter an edge having two nodes that have the same parent, that means they are already in the same subset, which means that there is a cycle.
 
+### BFS or DFS
+We can record adjcent nodes of each node. Then we check the graph using DFS or DFS. Using `visited` to mark nodes already checked, using `parent` to record the parent of nodes in each round of seaching.
+
+### Union Find Improvement
+The original union find takes O(n) for each edge, this can be improved to O(logn).
+1. Union by rank
+2. Path Compression
+
 ### Reference
 [Union Find](https://www.geeksforgeeks.org/union-find/)
