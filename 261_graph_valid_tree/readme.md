@@ -20,6 +20,7 @@ We can record adjcent nodes of each node. Then we check the graph using DFS or D
 ### Union Find Improvement
 The original union find takes O(n) for each edge, this can be improved to O(logn).
 1. Union by rank
+    1. Give the node a rank, initial 0. Each time we set a parent to a node, if they have same rank, we increase the parent node's rank by 1. Else we set the higher node as parent of another.
 2. Path Compression
 
 ### Reference
