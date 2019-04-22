@@ -14,3 +14,8 @@ Output: [0,1]
 Explanation: There are a total of 2 courses to take. To take course 1 you should have finished   
              course 0. So the correct course order is [0,1] .
 ```
+
+### Solution
+1. [Topological sort](solution.py)
+2. [DFS recurssive solution](others_solution.py)
+    The key idea here is to use `visited = []` to indicate whether a node has been visited or is currently in our path. If a node is visited before, then we can return True for this node. However, if this node is currently on our path, then this case means that we found a cycle.
