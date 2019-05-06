@@ -13,3 +13,6 @@ Example:
 Input: graph = [[1,2],[2,3],[5],[0],[5],[],[]]
 Output: [2,4,5,6]
 ```
+
+### Solution
+The idea is simple. DFS, mark nodes in traversal GRAY, if we meet a GRAY node during this traversal, this means there is a cycle. If all possible path are safe, then we can say this node is safe. Those nodes that are GRAY are not safe.
